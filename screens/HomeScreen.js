@@ -6,7 +6,7 @@ function Separator() {
   return <View style={styles.separator} />;
 }
 
-export default function App() {
+export default function index() {
   
   var myArray = ["Bedste ornitolog EU", "Elsker fuglesang", "Har arbejdet på det lokale bibliotek i 17 år", "Har det fedeste hår", "Har pisse flotte briller", "Er noget af en frækkert" ];
   return (
@@ -104,6 +104,9 @@ export default function App() {
    </SafeAreaView>
   );
 }
+index.navigationOptions = {
+    header: null,
+  };
 
 const styles = StyleSheet.create({
   container: {
