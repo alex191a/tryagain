@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Button, View, SafeAreaView, Text, Alert } from 'react-native';
+import { StyleSheet, Button, View, SafeAreaView, Text, Alert,ScrollView } from 'react-native';
 import Constants from 'expo-constants';
 
 function Separator() {
@@ -12,97 +12,97 @@ export default function index() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
-      <View>
-        
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="A1.38"
-          onPress={() => Alert.alert(myArray[Math.floor(Math.random(myArray) * myArray.length)])}
-        />
-      </View>
-      <Separator />
-      <View>
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="A1.39"
-          onPress={() => Alert.alert('Hvis du til fuglekending, selv er et fjog, så spørg Paul Hansen ornitlog')}
-        />
-      </View>
-      <Separator />
-      <View>
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="A1.40"
-          onPress={() => Alert.alert('Det er så ikke lavet endnu mester')}
-        />
-      </View>
-      <Separator />
-      <View>
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="A1.41"
-          onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
-        />
-      </View>
-      <Separator />
-      <View>
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="A29"
-          onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
-        />
-      </View>
-      <Separator />
-      <View>
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="A30"
-          onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
-        />
-      </View>
-      <Separator />
-      <View>
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="A31"
-          onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
-        />
-      </View>
-      <Separator />
-      <View>
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="A33"
-          onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
-        />
-      </View>
-      <Separator />
-      <View>
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="CO1"
-          onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
-        />
-      </View>
-      <Separator />
-      <View>
-        <Text style={styles.title}>
-        </Text>
-        <Button
-          title="OLC"
-          onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
-        />
-      </View>
-      <Separator />
+        <View>
+            
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="A1.38"
+            onPress={() => Alert.alert(myArray[Math.floor(Math.random(myArray) * myArray.length)])}
+            />
+        </View>
+        <Separator />
+        <View>
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="A1.39"
+            onPress={() => Alert.alert('Hvis du til fuglekending, selv er et fjog, så spørg Paul Hansen ornitlog')}
+            />
+        </View>
+        <Separator />
+        <View>
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="A1.40"
+            onPress={() => Alert.alert('Det er så ikke lavet endnu mester')}
+            />
+        </View>
+        <Separator />
+        <View>
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="A1.41"
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            />
+        </View>
+        <Separator />
+        <View>
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="A29"
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            />
+        </View>
+        <Separator />
+        <View>
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="A30"
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            />
+        </View>
+        <Separator />
+        <View>
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="A31"
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            />
+        </View>
+        <Separator />
+        <View>
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="A33"
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            />
+        </View>
+        <Separator />
+        <View>
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="CO1"
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            />
+        </View>
+        <Separator />
+        <View>
+            <Text style={styles.title}>
+            </Text>
+            <Button
+            title="OLC"
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            />
+        </View>
+        <Separator />
       </ScrollView>
    </SafeAreaView>
   );
