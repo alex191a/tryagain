@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Button, View, SafeAreaView, Text, Alert } from 'react-native';
+import { StyleSheet, Button, View, SafeAreaView, Text, Alert} from 'react-native';
 import Constants from 'expo-constants';
 
 function Separator() {
@@ -11,7 +11,6 @@ export default function index() {
   var myArray = ["Bedste ornitolog EU", "Elsker fuglesang", "Har arbejdet på det lokale bibliotek i 17 år", "Har det fedeste hår", "Har pisse flotte briller", "Er noget af en frækkert" ];
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
       <View>
         
         <Text style={styles.title}>
@@ -103,7 +102,6 @@ export default function index() {
         />
       </View>
       <Separator />
-      </ScrollView>
    </SafeAreaView>
   );
 }
