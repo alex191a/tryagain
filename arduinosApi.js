@@ -2,7 +2,6 @@ import react from 'react';
 
 export default function arduino()
 {
-getPerson = () => { 
     const arduinoId = this.props.match.params.arduinoId;
     axios.get('http://infoskaerm.pcvdata.dk/user/${arduinoId}').then(res =>{
       this.setState({oldData: res.data,
@@ -13,5 +12,4 @@ getPerson = () => {
         }),
       this.InsertDataToChart(res.data);
     });
-  };
 }
