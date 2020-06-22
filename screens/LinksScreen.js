@@ -13,10 +13,17 @@ export default function LinksScreen() {
   <Text>Bezier Line Chart</Text>
   <LineChart
     data={{
-      labels: ["January", "February", "March", "April", "May", "June"],
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Sep", "Oct", "Nov", "Dec"],
       datasets: [
         {
           data: [
+            Math.random() * 100,
+            Math.random() * 100,
+            Math.random() * 100,
+            Math.random() * 100,
+            Math.random() * 100,
+            Math.random() * 100,
+            Math.random() * 100,
             Math.random() * 100,
             Math.random() * 100,
             Math.random() * 100,
