@@ -28,7 +28,7 @@ export default function index() {
             </Text>
             <Button
             title="A1.39"
-            onPress={() => Alert.alert('Hvis du til fuglekending, selv er et fjog, så spørg Paul Hansen ornitlog')}
+            onPress={() => Alert.alert('Hvis du til fuglekending, selv er et fjog, så spørg Paul Hansen ornitlog'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -37,7 +37,7 @@ export default function index() {
             </Text>
             <Button
             title="A1.40"
-            onPress={() => Alert.alert('Det er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('Det er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -46,7 +46,7 @@ export default function index() {
             </Text>
             <Button
             title="A1.41"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -55,7 +55,7 @@ export default function index() {
             </Text>
             <Button
             title="A29"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -64,7 +64,7 @@ export default function index() {
             </Text>
             <Button
             title="A30"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -73,7 +73,7 @@ export default function index() {
             </Text>
             <Button
             title="A31"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -82,7 +82,7 @@ export default function index() {
             </Text>
             <Button
             title="A33"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -91,7 +91,7 @@ export default function index() {
             </Text>
             <Button
             title="CO1"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -100,7 +100,7 @@ export default function index() {
             </Text>
             <Button
             title="OLC"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
