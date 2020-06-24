@@ -1,13 +1,14 @@
 import React from 'react';
 import { StyleSheet, Button, View, SafeAreaView, Text, Alert, ScrollView } from 'react-native';
 import Constants from 'expo-constants';
-
 function Separator() {
   return <View style={styles.separator} />;
 }
 
 export default function index() {
-  
+  state = {
+      roomId: 45
+  }
   var myArray = ["Bedste ornitolog EU", "Elsker fuglesang", "Har arbejdet på det lokale bibliotek i 17 år", "Har det fedeste hår", "Har pisse flotte briller", "Er noget af en frækkert" ];
   return (
     <SafeAreaView style={styles.container}>
@@ -18,7 +19,7 @@ export default function index() {
             </Text>
             <Button
             title="A1.38"
-            onPress={() => Alert.alert(myArray[Math.floor(Math.random(myArray) * myArray.length)])}
+            onPress={() => Alert.alert(myArray[Math.floor(Math.random(myArray) * myArray.length)]),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -27,7 +28,7 @@ export default function index() {
             </Text>
             <Button
             title="A1.39"
-            onPress={() => Alert.alert('Hvis du til fuglekending, selv er et fjog, så spørg Paul Hansen ornitlog')}
+            onPress={() => Alert.alert('Hvis du til fuglekending, selv er et fjog, så spørg Paul Hansen ornitlog'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -36,7 +37,7 @@ export default function index() {
             </Text>
             <Button
             title="A1.40"
-            onPress={() => Alert.alert('Det er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('Det er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -45,7 +46,7 @@ export default function index() {
             </Text>
             <Button
             title="A1.41"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -54,7 +55,7 @@ export default function index() {
             </Text>
             <Button
             title="A29"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -63,7 +64,7 @@ export default function index() {
             </Text>
             <Button
             title="A30"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -72,7 +73,7 @@ export default function index() {
             </Text>
             <Button
             title="A31"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -81,7 +82,7 @@ export default function index() {
             </Text>
             <Button
             title="A33"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -90,7 +91,7 @@ export default function index() {
             </Text>
             <Button
             title="CO1"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
@@ -99,7 +100,7 @@ export default function index() {
             </Text>
             <Button
             title="OLC"
-            onPress={() => Alert.alert('De er så ikke lavet endnu mester')}
+            onPress={() => Alert.alert('De er så ikke lavet endnu mester'),this.setstate({roomId:45})}
             />
         </View>
         <Separator />
