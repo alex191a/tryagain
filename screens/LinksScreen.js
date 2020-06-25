@@ -1,6 +1,6 @@
-import { AreaChart, Grid} from 'react-native-svg-charts'
+import { AreaChart, Grid } from 'react-native-svg-charts'
 import React, { Component } from 'react'
-import { View } from 'react-native'
+import { View, Text, Dimensions } from 'react-native'
 import * as shape from 'd3-shape'
 //const screenWidth = Dimensions.get("window").width;
 class HttpExample extends Component {
