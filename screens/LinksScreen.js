@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import * as shape from 'd3-shape';
 import homescreen from './HomeScreen.js'
 //const screenWidth = Dimensions.get("window").width;
-class HttpExample extends Component {
+export default class HttpExample extends Component {
   state = {
     data: [],
     temp: [],
@@ -59,4 +59,3 @@ class HttpExample extends Component {
     )
   }
 }
-export default HttpExample
