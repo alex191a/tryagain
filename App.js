@@ -5,6 +5,7 @@ import { Platform, StatusBar, StyleSheet, View, Alert } from 'react-native';
 import useCachedResources from './hooks/useCachedResources';
 import BottomTabNavigator from './navigation/BottomTabNavigator';
 
+import RoomChart from './screens/LinksScreen.js'
 import Roomlist from './screens/HomeScreen.js';
 
 const Stack = createStackNavigator();
@@ -29,8 +30,9 @@ export default function App(props) {
   }
 }
  mis = () => {
-  Alert.alert("Virk");
-  console.log('helo');
+     return(
+    console.log("shit is broken"),
+  <RoomChart/>)
  }
 
 const styles = StyleSheet.create({
@@ -43,7 +45,7 @@ navstac = ()=>{
     return(
         <Stack.Navigator>
             <Stack.Screen name="RoomList" component={Roomlist}/>
-            <Stack.Screen name="roomchart" component={roomchart}/>
+            <Stack.Screen name="RoomChart" component={roomchart}/>
         </Stack.Navigator>
     );
 }

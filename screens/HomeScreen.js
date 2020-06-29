@@ -4,7 +4,7 @@ import Constants from 'expo-constants';
 //import vav from 'LinkScreen.js';
 import { createStackNavigator } from '@react-navigation/stack';
 import Buttonl from '../button.js';
-import { mis,roomNames } from '../App.js'
+import { mis,roomchart } from '../App.js'
 function Separator() {
   return <View style={styles.separator} />;
 }
