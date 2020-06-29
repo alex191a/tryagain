@@ -19,7 +19,7 @@ class index extends Component{
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
         <View>
-         <Buttonl name="a1.40" />
+         <Buttonl name="a1.40"/>
         </View>
       </ScrollView>
    </SafeAreaView>
@@ -50,10 +50,8 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
 });
-export default inde
-export function mis(){
-  return (
-    mis
-  )
 
+export function ting() {
+  return mis()
 }
+export default index
