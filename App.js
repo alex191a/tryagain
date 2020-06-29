@@ -36,6 +36,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',      
   },
 });
+navstac = ()=>{
+    return(
+        <Stack.Navigator>
+            <Stack.Screen name="RoomList" component={roomlist}/>
+            <Stack.Screen name="roomchart" component={roomchart}/>
+        </Stack.Navigator>
+    );
+}
 export function mis(){
   return mis
 };
+export function navstac(){
+    <NavigationContainer>
+        <navstac />
+    </NavigationContainer>
+}
