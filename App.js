@@ -5,6 +5,8 @@ import { Platform, StatusBar, StyleSheet, View, Alert } from 'react-native';
 import useCachedResources from './hooks/useCachedResources';
 import BottomTabNavigator from './navigation/BottomTabNavigator';
 
+import Roomlist from './screens/HomeScreen.js';
+
 const Stack = createStackNavigator();
 
 export default function App(props) {
@@ -14,14 +16,15 @@ export default function App(props) {
     return null;
   } else {
     return (
-      <View style={styles.container}>
+      /*<View style={styles.container}>
         {Platform.OS === 'ios' && <StatusBar barStyle="dark-content" />}
         <NavigationContainer>
           <Stack.Navigator>
             <Stack.Screen name="Root" component={BottomTabNavigator} />
           </Stack.Navigator>
         </NavigationContainer>
-      </View>
+      </View>*/
+      <Roomlist roomNames={['a1','23','3r3','ree','yeetus feeleetus']}/>
     );
   }
 }
@@ -39,7 +42,7 @@ const styles = StyleSheet.create({
 navstac = ()=>{
     return(
         <Stack.Navigator>
-            <Stack.Screen name="RoomList" component={roomlist}/>
+            <Stack.Screen name="RoomList" component={Roomlist}/>
             <Stack.Screen name="roomchart" component={roomchart}/>
         </Stack.Navigator>
     );

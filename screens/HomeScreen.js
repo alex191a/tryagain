@@ -4,29 +4,33 @@ import Constants from 'expo-constants';
 //import vav from 'LinkScreen.js';
 import { createStackNavigator } from '@react-navigation/stack';
 import Buttonl from '../button.js';
-import { mis } from '../App.js'
+import { mis,roomNames } from '../App.js'
 function Separator() {
   return <View style={styles.separator} />;
 }
 
-class index extends Component{
+export default class roomlist extends Component{
   state = {
       roomId: 45
       
   }
   render(){
+      var roomButtons =[]
+      this.props.roomNames.forEach(element => {
+          roomButtons.push(<Buttonl name= {element}/>)
+      });
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView}>
         <View>
-         <Buttonl name="a1.40"/>
+         {roomButtons}
         </View>
       </ScrollView>
    </SafeAreaView>
   );
   }
 }
-index.navigationOptions = {
+roomlist.navigationOptions = {
     header: null,
   };
 
@@ -54,4 +58,3 @@ const styles = StyleSheet.create({
 export function ting() {
   return mis()
 }
-export default index
