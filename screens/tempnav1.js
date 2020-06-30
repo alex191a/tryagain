@@ -13,7 +13,7 @@ function Stacker(){
             name= "Chart"
             component= {Chart}/>
             <Stack.Screen
-            name= "List"
+            name= "Liste"
             component = {List}/>
         </Stack.Navigator>
     )

@@ -7,8 +7,7 @@ export default class HttpExample extends Component {
   state = {
     data: [],
     temp: [],
-    co2: [],
-    time: []
+    co2: []
   }
   componentDidMount = () => {
     fetch('https://infoskaerm.pcvdata.dk/getall', {
@@ -27,19 +26,13 @@ export default class HttpExample extends Component {
   equaldata = (chartdata) => {
     let temP = [];
     let cO2 = [];
-    let Time = [];
     chartdata.forEach(element => {
       temP.push(element.Temp);
       cO2.push(element.CO2);
-      Time.push(element.UpdatedAt);
     });
     this.setState({
-      temP: this.state.temp,
-      cO2: this.state.co2,
-      Time: this.state.time,
       temp: temP,
       co2: cO2,
-      time: Time
     })
   }
   render() {

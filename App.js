@@ -3,7 +3,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import { Platform, StatusBar, StyleSheet, View, Alert } from 'react-native';
 import useCachedResources from './hooks/useCachedResources';
-import BottomTabNavigator from './navigation/BottomTabNavigator';
 import 'react-native-gesture-handler';
 import RoomChart from './screens/LinksScreen.js';
 import Roomlist from './screens/HomeScreen.js';
@@ -12,30 +11,14 @@ import Temp from './screens/tempnav1.js'
 const Stack = createStackNavigator();
 
 export default function App(props) {
-  const isLoadingComplete = useCachedResources();
-
-  if (!isLoadingComplete) {
-    return null;
-  } else {
-    return (
-      /*<View style={styles.container}>
-        {Platform.OS === 'ios' && <StatusBar barStyle="dark-content" />}
+    return(
         <NavigationContainer>
-          <Stack.Navigator>
-            <Stack.Screen name="Root" component={BottomTabNavigator} />
-          </Stack.Navigator>
+        <NavStack />
         </NavigationContainer>
-      </View>*/
+    )
       //<Roomlist roomNames={['a1','23','3r3','ree','yeetus feeleetus']}/>
-      <Temp/>
-    );
-  }
 }
- mis = () => {
-     return(
-    console.log("shit is broken"),
-  <RoomChart/>)
- }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -43,7 +26,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',      
   },
 });
-navstac = ()=>{
+function NavStack(){
     return(
         <Stack.Navigator initialRouteName="RoomList" >
             <Stack.Screen name="RoomList" component={Roomlist}/>
@@ -51,11 +34,6 @@ navstac = ()=>{
         </Stack.Navigator>
     );
 }
-export function mis(){
-  return mis
+export function mis({navigation}){
+  navigation.navigate('Roomchart')
 };
-export function navstac(){
-    <NavigationContainer>
-        <navstac />
-    </NavigationContainer>
-}
