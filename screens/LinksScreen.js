@@ -2,7 +2,6 @@ import { AreaChart, Grid} from 'react-native-svg-charts';
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import * as shape from 'd3-shape';
-import homescreen from './HomeScreen.js'
 //const screenWidth = Dimensions.get("window").width;
 export default class HttpExample extends Component {
   state = {

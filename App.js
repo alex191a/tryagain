@@ -4,9 +4,10 @@ import * as React from 'react';
 import { Platform, StatusBar, StyleSheet, View, Alert } from 'react-native';
 import useCachedResources from './hooks/useCachedResources';
 import BottomTabNavigator from './navigation/BottomTabNavigator';
-
-import RoomChart from './screens/LinksScreen.js'
+import 'react-native-gesture-handler';
+import RoomChart from './screens/LinksScreen.js';
 import Roomlist from './screens/HomeScreen.js';
+import Temp from './screens/tempnav1.js'
 
 const Stack = createStackNavigator();
 
@@ -25,7 +26,8 @@ export default function App(props) {
           </Stack.Navigator>
         </NavigationContainer>
       </View>*/
-      <Roomlist roomNames={['a1','23','3r3','ree','yeetus feeleetus']}/>
+      //<Roomlist roomNames={['a1','23','3r3','ree','yeetus feeleetus']}/>
+      <Temp/>
     );
   }
 }
@@ -43,9 +45,9 @@ const styles = StyleSheet.create({
 });
 navstac = ()=>{
     return(
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="RoomList" >
             <Stack.Screen name="RoomList" component={Roomlist}/>
-            <Stack.Screen name="RoomChart" component={roomchart}/>
+            <Stack.Screen name="RoomChart" component={RoomChart}/>
         </Stack.Navigator>
     );
 }

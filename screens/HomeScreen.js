@@ -5,15 +5,16 @@ import Constants from 'expo-constants';
 import { createStackNavigator } from '@react-navigation/stack';
 import Buttonl from '../button.js';
 import { mis,roomchart } from '../App.js'
+import { StackActions } from '@react-navigation/native';
 function Separator() {
   return <View style={styles.separator} />;
 }
-
 export default class roomlist extends Component{
   state = {
       roomId: 45
       
   }
+  
   render(){
       var roomButtons =[]
       this.props.roomNames.forEach(element => {
