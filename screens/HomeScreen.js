@@ -1,24 +1,20 @@
 import React, {Component} from 'react';
 import { StyleSheet, Button, View, SafeAreaView, Text, Alert, ScrollView} from 'react-native';
 import Constants from 'expo-constants';
-//import vav from 'LinkScreen.js';
-import { createStackNavigator } from '@react-navigation/stack';
 import Buttonl from '../button.js';
-import { mis, } from '../App.js'
-import { StackActions } from '@react-navigation/native';
 function Separator() {
   return <View style={styles.separator} />;
 }
 export default class roomlist extends Component{
   state = {
       roomId: 45
-      
   }
   
   render(){
       var roomButtons =[]
-      this.props.roomNames.forEach(element => {
-          roomButtons.push(<Buttonl name= {element}/>)
+      var roomNames = ['ting', 'ting2','ting3']
+          roomNames.forEach(element => {
+          roomButtons.push(<Buttonl name= {element} function={Lol()} />)
       });
   return (
     <SafeAreaView style={styles.container}>
@@ -55,7 +51,14 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
 });
-
-export function ting() {
-  return mis()
-}
+function Lol ({navigation}){
+    return(
+        console.log(navigation)
+    )
+};
+// function Mis({navigation}){
+//     return(
+//         console.log(navigation),
+//     navigation.navigate('RoomChart')
+//     )
+//     };

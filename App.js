@@ -34,6 +34,3 @@ function NavStack(){
         </Stack.Navigator>
     );
 }
-export function mis({navigation}){
-  navigation.navigate('Roomchart')
-};
