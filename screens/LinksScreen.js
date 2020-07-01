@@ -17,6 +17,7 @@ export default class HttpExample extends Component {
           data: responseJson
         })
         this.equaldata(this.state.data);
+        console.log(responseJson);
       })
       .catch((error) => {
         console.error(error);
