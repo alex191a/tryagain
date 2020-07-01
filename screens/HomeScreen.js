@@ -1,35 +1,27 @@
-import React, {Component} from 'react';
-import { StyleSheet, Button, View, SafeAreaView, Text, Alert, ScrollView} from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Button, View, SafeAreaView, Text, Alert, ScrollView } from 'react-native';
 import Constants from 'expo-constants';
-import Buttonl from '../button.js';
+import ButtonList from '../buttonlist';
+
 function Separator() {
   return <View style={styles.separator} />;
 }
-export default class roomlist extends Component{
+export default class roomlist extends Component {
   state = {
-      roomId: 45
+    roomId: 45
   }
-  
-  render(){
-      var roomButtons =[]
-      var roomNames = ['ting', 'ting2','ting3']
-          roomNames.forEach(element => {
-          roomButtons.push(<Buttonl name= {element} function={Lol()} />)
-      });
-  return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView style={styles.scrollView}>
-        <View>
-         {roomButtons}
-        </View>
-      </ScrollView>
-   </SafeAreaView>
-  );
+
+  render() {
+    return (
+      <View>
+        <ButtonList btnfunc={() => Lol()} />
+      </View>
+    );
   }
 }
 roomlist.navigationOptions = {
-    header: null,
-  };
+  header: null,
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -51,10 +43,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
 });
-function Lol ({navigation}){
-    return(
-        console.log(navigation)
-    )
+function Lol() {
+  console.log("f")
+  return alert("HEj")
 };
 // function Mis({navigation}){
 //     return(
