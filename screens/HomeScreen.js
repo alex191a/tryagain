@@ -14,7 +14,7 @@ export default class roomlist extends Component {
   render() {
     return (
       <View>
-        <ButtonList btnfunc={() => Lol()} />
+        <ButtonList btnfunc={() => Lol(this.props.navigation)} />
       </View>
     );
   }
@@ -43,9 +43,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
   },
 });
-function Lol() {
+function Lol(navigation) {
   console.log("f")
-  return alert("HEj")
+  return navigation.navigate('RoomChart')
 };
 // function Mis({navigation}){
 //     return(
